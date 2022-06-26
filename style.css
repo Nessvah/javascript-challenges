@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  height: 100vh;
+  width: auto;
+  background: #fdc830; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #f37335,
+    #fdc830
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #f37335,
+    #fdc830
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+  font-size: 3rem;
+  padding-top: 20%;
+  color: #a0471b;
+}
+
+p {
+  font-size: 2.4rem;
+}
+
+.container {
+  background-color: antiquewhite;
+  border-radius: 8px;
+  height: 60vh;
+  width: 60%;
+  margin: 10rem auto 0 auto;
+  text-align: center;
+  box-shadow: 10px 10px 10px #88888860;
+  min-width: fit-content;
+  padding: 0 2rem;
+}
