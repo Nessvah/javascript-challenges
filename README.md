@@ -1,1 +1,1 @@
-# javascript-codewars-challenges
+# javascript-challenges
