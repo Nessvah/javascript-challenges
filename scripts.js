@@ -22,7 +22,7 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 
 ///SECOND CHALLENGE
 
-/* Complete the function so that it finds the average of the three scores passed to it 
+/* Complete the function so that it finds the average of the three scores passed to it
 and returns the letter value associated with that grade. */
 
 function getGrade(s1, s2, s3) {
@@ -123,13 +123,50 @@ const rps = (p1, p2) => {
 ////////////////////////////////////////////////////////////
 /// 4th CHALLENGE
 
-/* Write a function named setAlarm which receives two parameters. The first parameter, 
-employed, is true whenever you are employed and the second parameter, vacation is true 
+/* Write a function named setAlarm which receives two parameters. The first parameter,
+employed, is true whenever you are employed and the second parameter, vacation is true
 whenever you are on vacation.
 
-The function should return true if you are employed and not on vacation (because these 
+The function should return true if you are employed and not on vacation (because these
 are the circumstances under which you need to set an alarm). It should return false otherwise. */
 
 function setAlarm(employed, vacation) {
   return employed === true && vacation === false ? true : false;
 }
+
+/////////////////////////////////////////////////////////////////
+/// 5TH CHALLENGE
+
+/* Create a function with two arguments that will return an array of the first (n) multiples of (x).
+
+Assume both the given number and the number of times to count will be positive numbers greater than 0.
+
+Return the results as an array (or list in Python, Haskell or Elixir).
+
+Examples:
+
+countBy(1,10) === [1,2,3,4,5,6,7,8,9,10]
+countBy(2,5) === [2,4,6,8,10]
+ */
+let arr = [];
+
+function firstMultiples(num1, num2) {
+  for (let i = 1; i <= num2; i++) {
+    let multiple = num1 * i;
+    arr.push(multiple);
+  }
+
+  return arr;
+}
+
+console.log(firstMultiples(3, 5));
+
+// Better writen code
+
+// function countBy(x, n) {
+//     var z = [];
+//     for (i = 1; i <= n; i++) {
+//         z.push(x * i);
+//     }
+//     return z;
+// }
